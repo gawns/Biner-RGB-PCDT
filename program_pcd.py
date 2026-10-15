@@ -1,23 +1,4 @@
-"""
-Program Pengolahan Citra Digital (versi laporan otomatis)
-=========================================================
-Membaca citra (bmp/jpg/png) lalu memprosesnya menjadi tiga representasi:
-RGB (8 bit), Grayscale (8 bit), dan Biner (0/1).
 
-Output yang dihasilkan (di folder hasil_pemrosesan/):
-  - Matriks lengkap  : hasil_*.csv
-  - Gambar hasil     : hasil_*.png  (RGB, R, G, B, grayscale, biner)
-  - Laporan proses   : laporan_pemrosesan.md  (cara sistem berjalan,
-                       status tiap tahap, dan verdict AMAN/TIDAK AMAN)
-
-Cara pakai:
-  python program_pcd.py                      -> diminta memasukkan path
-  python program_pcd.py <path_gambar>        -> langsung memproses
-  python program_pcd.py <path_gambar> --no-gui   -> tanpa jendela matplotlib
-  python program_pcd.py <path_gambar> --folder <dir>  -> folder output lain
-
-Kode keluar (exit code): 0 = sukses, 1 = gagal.
-"""
 
 import argparse
 import datetime
